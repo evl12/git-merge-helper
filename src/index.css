@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --body: 'Chivo', 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', Consolas, monospace;
+  --ink: #14211b;
+  --canvas: #eef4f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% -20%, rgba(212, 241, 229, 0.95), transparent 42%),
+    radial-gradient(circle at 90% 0%, rgba(244, 228, 196, 0.6), transparent 48%),
+    var(--canvas);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(1.9rem, 2.8vw, 2.8rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: clamp(1.1rem, 1.4vw, 1.35rem);
+  margin-bottom: 10px;
+}
+
+code,
+pre,
+table td:first-child {
+  font-family: var(--mono);
+}
